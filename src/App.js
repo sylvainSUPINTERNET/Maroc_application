@@ -1,19 +1,16 @@
 import React, {Component} from 'react';
+import Header from "./components/menu/Header";
+import Main from "./components/menu/Main";
+
 //import './App.css';
 
-// ROUTER
-import AppRouter from './components/Menu/AppRouter';
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <header className="App-header">
-                    <h1 className="App-title">Maroc MERRYL</h1>
-                    <nav>
-                        <AppRouter/>
-                    </nav>
-                </header>
+                <Header/>
+                <Main/>
             </div>
         );
     }
