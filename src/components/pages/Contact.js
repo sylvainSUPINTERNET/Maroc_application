@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
+
+import {Button, Icon} from 'react-materialize'
+
+
 class Contact extends Component {
     render() {
         return (
-            <p>Contact page</p>
+            <div>
+                <p>Contact page</p>
+                <Button waves='light'>
+                    <Icon>thumb_up</Icon>
+                </Button>
+            </div>
         );
     }
 }
