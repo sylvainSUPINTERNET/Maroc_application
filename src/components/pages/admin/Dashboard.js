@@ -4,10 +4,25 @@ import React, { Component } from 'react';
 import {Button, Card, CardTitle, Col, Icon, Input, Row} from 'react-materialize'
 
 
+// UTILS Authentification
+import {Auth} from '../../utils/authentification/Auth';
+
 class Dashboard extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
+
+    componentWillMount() {
+        Auth.checkingToken();
+    }
+
     render() {
 
         const title_value = "Administration";
+
 
         return (
             <div className="row">
